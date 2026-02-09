@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Expense Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="logo">
+      <div class="icon">💸</div>
+      <span>Student Expense Tracker</span>
+    </div>
+    <button class="btn-primary">Get Started</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="badge">✨ Built for Students, By Students</span>
+    <h1>Track Expenses, <span>Save Smarter</span></h1>
+    <p>
+      The simplest way to manage your student budget.
+      Track spending, set monthly limits, and visualize where
+      your money goes — all in one place.
+    </p>
+    <button class="btn-large">Start Tracking Free →</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="card">
+      <div class="card-icon">📈</div>
+      <h3>Track Every Rupee</h3>
+      <p>Easily log expenses with categories like food, transport, books, and entertainment.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Set Monthly Budgets</h3>
+      <p>Define your spending limit and get alerts when you're approaching it.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Visual Insights</h3>
+      <p>Beautiful charts show exactly where your money goes each month.</p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div>
+      <h2>100%</h2>
+      <p>Free to Use</p>
+    </div>
+    <div>
+      <h2>8</h2>
+      <p>Categories</p>
+    </div>
+    <div>
+      <h2>∞</h2>
+      <p>Expenses</p>
+    </div>
+  </section>
+
+  <!-- Auth -->
+  <section class="auth">
+    <h2>StudentSave</h2>
+    <p>Track expenses, save smarter</p>
+
+    <div class="auth-tabs">
+      <button id="signInTab" class="active">Sign In</button>
+      <button id="signUpTab">Sign Up</button>
+    </div>
+
+    <form id="authForm" action="auth" method="post">
+      <label>User Name</label>
+      <input type="User Name" name="User Name" placeholder="Full Name"required/>
+      <label>Email</label>
+      <input type="email" name="email" placeholder="student@university.edu" required/>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="••••••••" required/>
+      <button type="submit" class="btn-large">Sign In</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Student Expense Tracker © 2026
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
