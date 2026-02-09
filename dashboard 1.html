@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-icon">💼</div>
+    <div>
+      <h1>Expense Tracker</h1>
+      <p>Track your spending and stay on budget</p>
+    </div>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="card">
+    <div class="card-row">
+      <div>
+        <span>Total Amount</span>
+        <h2>₹5000</h2>
+        <small>Monthly budget</small>
+      </div>
+      <div class="icon-box">₹</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-row">
+      <div>
+        <span>Total Spent</span>
+        <h2>₹2500</h2>
+        <small>This month</small>
+      </div>
+      <div class="icon-box">📅</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-row">
+      <div>
+        <span>Transactions</span>
+        <h2>5</h2>
+        <small>Total count</small>
+      </div>
+      <div class="icon-box">📉</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-row">
+      <div>
+        <span>Avg. Per Day</span>
+        <h2>₹500</h2>
+        <small>Daily average</small>
+      </div>
+      <div class="icon-box">🐷</div>
+    </div>
+  </div>
+
+  <!-- Recent Transactions -->
+  <h3>Recent Transactions</h3>
+
+  <div class="transaction">
+    <span class="emoji">📚</span>
+    <div>
+      <strong>Books</strong>
+      <small>Education · Feb 4, 2026</small>
+    </div>
+    <span class="amount">-₹400</span>
+  </div>
+
+  <div class="transaction">
+    <span class="emoji">🛵</span>
+    <div>
+      <strong>Rapido</strong>
+      <small>Transport · Feb 3, 2026</small>
+    </div>
+    <span class="amount">-₹250</span>
+  </div>
+
+  <div class="transaction">
+    <span class="emoji">📱</span>
+    <div>
+      <strong>Mobile Recharge</strong>
+      <small>Utilities · Feb 2, 2026</small>
+    </div>
+    <span class="amount">-₹300</span>
+  </div>
+
+  <div class="transaction">
+    <span class="emoji">👟</span>
+    <div>
+      <strong>New Shoes</strong>
+      <small>Shopping · Feb 1, 2026</small>
+    </div>
+    <span class="amount">-₹900</span>
+  </div>
+
+  <div class="transaction">
+    <span class="emoji">👗</span>
+    <div>
+      <strong>New Dress</strong>
+      <small>Shopping · Jan 31, 2026</small>
+    </div>
+    <span class="amount">-₹650</span>
+  </div>
+
+  <!-- Add Expense -->
+  <div class="card">
+    <h3>Add Expense</h3>
+
+    <label>Amount (₹)</label>
+    <input type="number" placeholder="0">
+
+    <label>Category</label>
+    <select>
+      <option>📚 Books</option>
+      <option>🛵 Rapido</option>
+      <option>📱 Mobile Recharge</option>
+      <option>👟 Shoes</option>
+      <option>👗 Dress</option>
+      <option>🖨️ Xerox</option>
+    </select>
+
+    <label>Description</label>
+    <input type="text" placeholder="What did you spend on?">
+
+    <button class="add-btn">＋ Add Expense</button>
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

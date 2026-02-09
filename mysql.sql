@@ -1,0 +1,4 @@
+CREATE DATABASE studentdb;
+USE studentdb;
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,emaiL VARCHAR(100), password VARCHAR(100));
+
